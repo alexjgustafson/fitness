@@ -1,3 +1,7 @@
+---
+title: Short
+date: 2021-10-11
+---
 Workouts should be short and intense most of the time. Take a moment to venerate the "short." 
 
 Short means you can workout any day you will it.
