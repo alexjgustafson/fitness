@@ -1,0 +1,7 @@
+.centered{
+    text-align: center
+}
+
+.container.compact{
+    max-width: 28em;
+}
