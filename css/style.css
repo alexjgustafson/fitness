@@ -5,3 +5,15 @@
 .container.compact{
     max-width: 28em;
 }
+
+.contact{
+    background-color: var(--muted-border-color);
+    margin: calc(var(--block-spacing-vertical)/2) 0;
+    padding: calc(var(--block-spacing-vertical)) 0;
+}
+
+@media (min-width: 992px){
+    .trainer-directory-callout{
+        margin-top: 0;
+    }
+}
