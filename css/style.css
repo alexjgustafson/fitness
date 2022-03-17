@@ -17,3 +17,62 @@
         margin-top: 0;
     }
 }
+
+/*
+    BTCF teal: #33F0FF
+*/
+
+.btcf-resume{
+    --ABEL: 'Abel', sans-serif;
+    --BEBAS: 'Bebas Neue', serif;
+    --background-color: #353638;
+    background-color: var(--background-color);
+    --color: #fff;
+    --font-family: var(--ABEL);
+}
+
+.btcf-resume a{
+    --color: #33F0FF;
+}
+
+.btcf-resume h1,
+.btcf-resume h2,
+.btcf-resume h3,
+.btcf-resume h4,
+.btcf-resume h5,
+.btcf-resume h6{
+    --color: #33F0FF;
+    --font-family: var(--BEBAS);
+}
+
+.btcf-resume .name{
+    --typography-spacing-vertical: 0.8rem;
+}
+
+.btcf-resume .location{
+    --color: #fff;
+    color: var(--color);
+    --font-size: 14px;
+    font-size: var(--font-size);
+    --font-family: var(--ABEL);
+    font-family: var(--font-family);
+}
+
+.btcf-resume h2{
+    --typography-spacing-vertical: 0.8rem;
+}
+.btcf-resume .chunk{
+    margin-bottom: var(--typography-spacing-vertical);
+}
+.btcf-resume .chunk p{
+    margin-bottom: 0;
+}
+
+.btcf-resume .experience{
+    --font-size: 16px;
+}
+.btcf-resume .experience h3{
+    --color: #93f7ff;
+    --font-size: 20px;
+    --typography-spacing-vertical: 0.6rem;
+}
