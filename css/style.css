@@ -36,6 +36,7 @@
 }
 
 .btcf-resume h1,
+.btcf-resume p.h1,
 .btcf-resume h2,
 .btcf-resume h3,
 .btcf-resume h4,
@@ -43,6 +44,7 @@
 .btcf-resume h6{
     --color: #33F0FF;
     --font-family: var(--BEBAS);
+    font-family: var(--font-family);
 }
 
 .btcf-resume .name{
