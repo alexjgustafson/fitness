@@ -60,6 +60,10 @@
     font-family: var(--font-family);
 }
 
+.btcf-resume .salutation{
+    --font-size: 36px;
+}
+
 .btcf-resume h2{
     --typography-spacing-vertical: 0.8rem;
 }
