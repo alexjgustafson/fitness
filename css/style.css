@@ -18,21 +18,32 @@
     }
 }
 
-/*
-    BTCF teal: #33F0FF
-*/
-
 .btcf-resume{
     --ABEL: 'Abel', sans-serif;
     --BEBAS: 'Bebas Neue', serif;
+    --BTCF-TEAL: #33F0FF;
     --background-color: #353638;
     background-color: var(--background-color);
     --color: #fff;
     --font-family: var(--ABEL);
 }
 
+.bridge-view-resume{
+    --BARLOW: 'Barlow', sans-serif;
+    --QUESTRIAL: 'Questrial', sans-serif;;
+    --BRIDGE-VIEW-TEAL: rgb(106, 203, 227);
+    --background-color: #000;
+    background-color: var(--background-color);
+    --color: #fff;
+    --font-family: var(--BARLOW);
+}
+
 .btcf-resume a{
-    --color: #33F0FF;
+    --color: var(--BTCF-TEAL);
+}
+
+.bridge-view-resume a{
+    --color: var(--BRIDGE-VIEW-TEAL);
 }
 
 .btcf-resume h1,
@@ -47,7 +58,22 @@
     font-family: var(--font-family);
 }
 
-.btcf-resume .name{
+.bridge-view-resume h1,
+.bridge-view-resume p.h1,
+.bridge-view-resume h2,
+.bridge-view-resume h3,
+.bridge-view-resume h4,
+.bridge-view-resume h5,
+.bridge-view-resume h6{
+    --color: var(--BRIDGE-VIEW-TEAL);
+    --font-family: var(--QUESTRIAL);
+    font-family: var(--font-family);
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+}
+
+.btcf-resume .name,
+.bridge-view-resume .name{
     --typography-spacing-vertical: 0.8rem;
 }
 
@@ -60,24 +86,42 @@
     font-family: var(--font-family);
 }
 
-.btcf-resume .salutation{
+.bridge-view-resume .location{
+    --color: #fff;
+    color: var(--color);
+    --font-size: 14px;
+    font-size: var(--font-size);
+    --font-family: var(--BARLOW);
+    font-family: var(--font-family);
+}
+
+.btcf-resume .salutation,
+.bridge-view-resume .salutation {
     --font-size: 36px;
 }
 
-.btcf-resume h2{
+.btcf-resume h2,
+.bridge-view-resume h2 {
     --typography-spacing-vertical: 0.8rem;
 }
-.btcf-resume .chunk{
+
+.btcf-resume .chunk,
+.bridge-view-resume .chunk {
     margin-bottom: var(--typography-spacing-vertical);
 }
-.btcf-resume .chunk p{
+
+.btcf-resume .chunk p,
+.bridge-view-resume .chunk p {
     margin-bottom: 0;
 }
 
-.btcf-resume .experience{
+.btcf-resume .experience,
+.bridge-view-resume .experience {
     --font-size: 16px;
 }
-.btcf-resume .experience h3{
+
+.btcf-resume .experience h3,
+.bridge-view-resume .experience h3 {
     --color: #93f7ff;
     --font-size: 20px;
     --typography-spacing-vertical: 0.6rem;
