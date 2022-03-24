@@ -37,6 +37,10 @@
     --color: #fff;
     --font-family: var(--BARLOW);
 }
+.golden-warrior-resume{
+    --MONTSERRAT: 'Montserrat', sans-serif;
+    --font-family: var(--MONTSERRAT);
+}
 
 .btcf-resume a{
     --color: var(--BTCF-TEAL);
@@ -73,7 +77,8 @@
 }
 
 .btcf-resume .name,
-.bridge-view-resume .name{
+.bridge-view-resume .name,
+.golden-warrior-resume .name {
     --typography-spacing-vertical: 0.8rem;
 }
 
@@ -94,35 +99,49 @@
     --font-family: var(--BARLOW);
     font-family: var(--font-family);
 }
+.golden-warrior-resume .location{
+    --font-size: 14px;
+    font-size: var(--font-size);
+}
 
 .btcf-resume .salutation,
-.bridge-view-resume .salutation {
+.bridge-view-resume .salutation,
+.golden-warrior-resume .salutation {
     --font-size: 36px;
 }
 
 .btcf-resume h2,
-.bridge-view-resume h2 {
+.bridge-view-resume h2,
+.golden-warrior-resume h2 {
     --typography-spacing-vertical: 0.8rem;
 }
 
 .btcf-resume .chunk,
-.bridge-view-resume .chunk {
+.bridge-view-resume .chunk,
+.golden-warrior-resume .chunk {
     margin-bottom: var(--typography-spacing-vertical);
 }
 
 .btcf-resume .chunk p,
-.bridge-view-resume .chunk p {
+.bridge-view-resume .chunk p,
+.golden-warrior-resume .chunk p {
     margin-bottom: 0;
 }
 
 .btcf-resume .experience,
-.bridge-view-resume .experience {
+.bridge-view-resume .experience,
+.golden-warrior-resume .experience {
     --font-size: 16px;
 }
 
 .btcf-resume .experience h3,
 .bridge-view-resume .experience h3 {
     --color: #93f7ff;
+    --font-size: 20px;
+    --typography-spacing-vertical: 0.6rem;
+}
+
+.golden-warrior-resume .experience h3 {
     --font-size: 20px;
     --typography-spacing-vertical: 0.6rem;
 }
