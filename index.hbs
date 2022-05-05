@@ -6,6 +6,26 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+<script>
+fetch('https://coachinprogress.com/wp-json/wp/v2/posts')
+  .then(response => response.json())
+  .then(function(data){
+	const wrapper = document.querySelector('#coachinprogress-latest-posts')
+	const postList = document.createElement('ul')
+	data.slice(0,3)
+		.map(function(post){
+			const item = document.createElement('li')
+			const link = document.createElement('a')
+			link.innerText = post.title.rendered
+			link.href = post.link
+			item.appendChild(link)
+			return item
+		})
+		.forEach(item => postList.appendChild(item))
+	wrapper.appendChild(postList)
+	wrapper.style.display = 'block'
+  });
+</script>
 <main>
 	<div class="container">	
 		<h1>Alex J. Gustafson Fitness</h1>
@@ -46,13 +66,13 @@
 	</div>
 
 	<div class="container">
-		<h2>Writings on Fitness</h2>
-		<ul>
-			{{#each collections.posts}}
-				<li><a href="{{this.url}}">{{this.data.title}}</a></li>
-			{{/each}}
-		</ul>
-
+		<h2>Writings</h2>
+		<p>Alex has begun a blog about CrossFit coaching at <a href="https://coachinprogress.com">CoachInProgress.com.</a></p>
+		<div id="coachinprogress-latest-posts" style="display:none;">			
+			<p>Latest posts:</p>
+			<ul>
+			</ul>
+		</div>
 		<h2>Social Media</h2>
 		<p>Instagram: <a href="https://www.instagram.com/alexjgustafson/">@alexjgustafson</a></p>
 	</div>
