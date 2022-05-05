@@ -6,26 +6,6 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<script>
-fetch('https://coachinprogress.com/wp-json/wp/v2/posts')
-  .then(response => response.json())
-  .then(function(data){
-	const wrapper = document.querySelector('#coachinprogress-latest-posts')
-	const postList = document.createElement('ul')
-	data.slice(0,3)
-		.map(function(post){
-			const item = document.createElement('li')
-			const link = document.createElement('a')
-			link.innerText = post.title.rendered
-			link.href = post.link
-			item.appendChild(link)
-			return item
-		})
-		.forEach(item => postList.appendChild(item))
-	wrapper.appendChild(postList)
-	wrapper.style.display = 'block'
-  });
-</script>
 <main>
 	<div class="container">	
 		<h1>Alex J. Gustafson Fitness</h1>
@@ -77,5 +57,25 @@ fetch('https://coachinprogress.com/wp-json/wp/v2/posts')
 		<p>Instagram: <a href="https://www.instagram.com/alexjgustafson/">@alexjgustafson</a></p>
 	</div>
 </main>
+<script>
+fetch('https://coachinprogress.com/wp-json/wp/v2/posts')
+  .then(response => response.json())
+  .then(function(data){
+	const wrapper = document.querySelector('#coachinprogress-latest-posts')
+	const postList = document.createElement('ul')
+	data.slice(0,3)
+		.map(function(post){
+			const item = document.createElement('li')
+			const link = document.createElement('a')
+			link.innerText = post.title.rendered
+			link.href = post.link
+			item.appendChild(link)
+			return item
+		})
+		.forEach(item => postList.appendChild(item))
+	wrapper.appendChild(postList)
+	wrapper.style.display = 'block'
+  });
+</script>
 </body>
 </html>
