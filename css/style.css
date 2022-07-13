@@ -1,3 +1,7 @@
+.home{
+    padding-bottom: 0;
+}
+
 .centered{
     text-align: center
 }
@@ -8,7 +12,7 @@
 
 .contact{
     background-color: var(--muted-border-color);
-    margin: calc(var(--block-spacing-vertical)/2) 0;
+    margin-top: var(--block-spacing-vertical);
     padding: calc(var(--block-spacing-vertical)) 0;
 }
 
