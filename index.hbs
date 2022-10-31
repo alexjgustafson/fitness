@@ -37,13 +37,6 @@
 		<h2>Social Media</h2>
 		<p>Instagram: <a href="https://www.instagram.com/alexjgustafson/">@alexjgustafson</a></p>
 
-		<h2>Writings</h2>
-		<p>Alex has begun a blog about CrossFit coaching at <a href="https://coachinprogress.com">CoachInProgress.com.</a></p>
-		<div id="coachinprogress-latest-posts" style="display:none;">			
-			<h3>Latest posts from <span style="font-style:italic;">Coach in Progress</span>:</h3>
-			<ul>
-			</ul>
-		</div>
 	</div>
 
 	<div class="contact">		
@@ -66,25 +59,5 @@
 		</div>
 	</div>
 </main>
-<script>
-fetch('https://coachinprogress.com/wp-json/wp/v2/posts')
-  .then(response => response.json())
-  .then(function(data){
-	const wrapper = document.querySelector('#coachinprogress-latest-posts')
-	const postList = document.createElement('ul')
-	data.slice(0,3)
-		.map(function(post){
-			const item = document.createElement('li')
-			const link = document.createElement('a')
-			link.innerText = post.title.rendered
-			link.href = post.link
-			item.appendChild(link)
-			return item
-		})
-		.forEach(item => postList.appendChild(item))
-	wrapper.appendChild(postList)
-	wrapper.style.display = 'block'
-  });
-</script>
 </body>
 </html>
